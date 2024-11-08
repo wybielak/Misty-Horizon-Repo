@@ -147,11 +147,11 @@
 
                     if (velocityTime > 10) // Jeżeli potrzebny czas na przejście od pkt 1 do pkt 2 jest większy niż 10sec, większy zasięg odkrycia
                     {
-                        _locationsRanges = AddToArray(_locationsRanges, 40);
+                        _locationsRanges = AddToArray(_locationsRanges, 30);
                     }
                     else if (velocityTime <= 10 && velocityTime > 2) // Jeżeli potrzebny czas na przejście od pkt 1 do pkt 2 jest mniejszy niż 10sec ale wiek. 2s, mniejszy zasięg odkrycia
                     {
-                        _locationsRanges = AddToArray(_locationsRanges, 25);
+                        _locationsRanges = AddToArray(_locationsRanges, 20);
                     }
                     else // Jeżeli potrzebny czas na przejście od pkt 1 do pkt 2 jest mniejszy niż 2sec, najmniejszy zasięg odkrycia
                     {
@@ -161,7 +161,7 @@
                 } 
                 else
                 {
-                    _locationsRanges = AddToArray(_locationsRanges, 40);
+                    _locationsRanges = AddToArray(_locationsRanges, 30);
                 }
 
                 _locations = AddToArray(_locations, location); // Rozszerzanie tablic istniejących punktów o nowo utworzony
